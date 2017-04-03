@@ -800,16 +800,6 @@
       </detail>
     </annotation>
     <setupTask
-        xsi:type="setup:ResourceCopyTask"
-        id="JD-Eclipse"
-        sourceURL="https://github.com/friedrich-j/coreos/blob/master/scripts/build.sh"
-        targetURL="${installation.location|uri}/build.sh"/>
-    <setupTask
-        xsi:type="setup:ResourceCopyTask"
-        id="JD-Eclipse"
-        sourceURL="https://github.com/friedrich-j/coreos/blob/master/scripts/build.sh"
-        targetURL="${user.home|uri}/build.sh"/>
-    <setupTask
         xsi:type="setup.p2:P2Task"
         label="Eclipse IDE for Java EE Developers (Neon)">
       <requirement
@@ -977,5 +967,8 @@
           url="http://jd.benow.ca/jd-eclipse/update"/>
     </setupTask>
   </version>
-  <description>Eclipse IDE with gradle, aspectj, etc.</description>
+  <description>
+     Eclipse IDE with gradle, AJDT, etc.
+    (http://github.com/friedrich-j/eclipse-installer)
+  </description>
 </setup:Product>
